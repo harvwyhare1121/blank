@@ -1,4 +1,4 @@
-FROM ubuntu:jammy
+FROM ubuntu:latest
 
 # RUN apt update && \
 #     DEBIAN_FRONTEND=noninteractive apt install -y cinnamon locales sudo
