@@ -1,13 +1,13 @@
-FROM ubuntu:23.04
+FROM ubuntu:jammy
 
 # RUN apt update && \
 #     DEBIAN_FRONTEND=noninteractive apt install -y cinnamon locales sudo
 
-# RUN apt update && \
-#     DEBIAN_FRONTEND=noninteractive apt install -y cinnamon-desktop-environment locales sudo
-
 RUN apt update && \
-    DEBIAN_FRONTEND=noninteractive apt install -y ubuntucinnamon-desktop locales sudo
+    DEBIAN_FRONTEND=noninteractive apt install -y cinnamon-desktop-environment locales sudo
+
+# RUN apt update && \
+#     DEBIAN_FRONTEND=noninteractive apt install -y ubuntucinnamon-desktop locales sudo
 
 RUN apt update && \
     DEBIAN_FRONTEND=noninteractive apt install -y xrdp tigervnc-standalone-server && \
