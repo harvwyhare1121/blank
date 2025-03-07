@@ -1,4 +1,4 @@
-FROM ubuntu:lunar-20230615
+FROM ubuntu:23.04
 
 # RUN apt update && \
 #     DEBIAN_FRONTEND=noninteractive apt install -y cinnamon locales sudo
